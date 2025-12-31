@@ -1,0 +1,5 @@
+{
+  "name": "New Naija Tax App",
+  "description": "A modern Nigeria PAYE tax calculator based on the 2024/2025 tax regulations, featuring progressive brackets and a tax-free threshold.",
+  "requestFramePermissions": []
+}
