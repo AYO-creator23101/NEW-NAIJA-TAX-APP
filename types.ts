@@ -11,13 +11,23 @@ export interface BracketDetail {
   tax: number;
 }
 
+export interface DeductionsBreakdown {
+  cra: number;
+  pension: number;
+  nhf: number;
+  nhis: number;
+  insurance: number;
+  rent: number;
+  total: number;
+}
+
 export interface TaxCalculationResult {
   monthlyGross: number;
   annualGross: number;
   annualTax: number;
   monthlyTax: number;
   monthlyTakeHome: number;
-  taxFreeAmount: number;
   taxableIncome: number;
+  deductions: DeductionsBreakdown;
   breakdown: BracketDetail[];
 }
